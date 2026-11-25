@@ -96,12 +96,8 @@
     if (standalone) {
       location.replace(TARGET);
     } else {
-      // Give Chrome a moment to offer Install app, then go to the call log.
       document.getElementById("status").textContent =
-        "This page can be installed as its own app. Opening your call log in a few seconds…";
-      setTimeout(function () {
-        location.replace(TARGET);
-      }, 6000);
+        "Install this page as an app for a home-screen icon, or tap the button to open your call log.";
     }
   </script>
 </body>
